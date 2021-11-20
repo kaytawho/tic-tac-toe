@@ -3,6 +3,8 @@
 ## Tech Used
 
 -   HTML
+-   CSS
+-   JavaScript
 
 ## Planning
 
