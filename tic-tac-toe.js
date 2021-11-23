@@ -1,8 +1,12 @@
 const gameStatus = document.querySelector('.status');
+const xScore = document.querySelector('.xscore');
+const oScore = document.querySelector('.oscore');
 
 let isGameActive = true;
 let currentPlayer = 'X';
 let gameState = ['', '', '', '', '', '', '', '', ''];
+let playerXScore = 0;
+let playerOScore = 0;
 
 const winningCombos = [
     [0, 1, 2],
@@ -15,6 +19,7 @@ const winningCombos = [
     [2, 4, 6],
 ];
 
+// Starting player's turn
 function playerTurn() {
     return `It's ${currentPlayer}'s turn`;
 }
@@ -26,11 +31,28 @@ function cellPlayed(clickedCell, clickedCellIndex) {
     clickedCell.innerHTML = currentPlayer;
 }
 
+// Alternating player's turn
 function playerChange() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; /// using a ternary operator - shorthand for an if statement
     gameStatus.innerHTML = playerTurn();
 }
 
+// Checking for empty cells to play
+function cellClick(clickedCellEvent) {
+    const clickedCell = clickedCellEvent.target;
+    const clickedCellIndex = parseInt(
+        clickedCell.getAttribute('data-cell-index') /// using data-cell-index
+    );
+
+    if (gameState[clickedCellIndex] !== '' || !isGameActive) {
+        return;
+    }
+
+    cellPlayed(clickedCell, clickedCellIndex);
+    resultValidation();
+}
+
+// Validating results
 function resultValidation() {
     let roundWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -51,6 +73,11 @@ function resultValidation() {
 
     if (roundWon) {
         gameStatus.innerHTML = winnerMessage();
+        if (currentPlayer === 'X') {
+            xScore.innerHTML = playerXScore + 1;
+        } else {
+            oScore.innerHTML = playerOScore + 1;
+        }
         isGameActive = false;
         return;
     }
@@ -65,20 +92,7 @@ function resultValidation() {
     playerChange();
 }
 
-function cellClick(clickedCellEvent) {
-    const clickedCell = clickedCellEvent.target;
-    const clickedCellIndex = parseInt(
-        clickedCell.getAttribute('data-cell-index') /// using data-cell-index
-    );
-
-    if (gameState[clickedCellIndex] !== '' || !isGameActive) {
-        return;
-    }
-
-    cellPlayed(clickedCell, clickedCellIndex);
-    resultValidation();
-}
-
+// Game result messages
 function winnerMessage() {
     return `Player ${currentPlayer} is the winner!`;
 }
@@ -87,6 +101,7 @@ function drawMessage() {
     return `Game over. It's a tie!`;
 }
 
+/// Game restart
 function restartGame() {
     isGameActive = true;
     currentPlayer = 'X';
@@ -95,6 +110,7 @@ function restartGame() {
     document.querySelectorAll('.cell').forEach((cell) => (cell.innerHTML = ''));
 }
 
+// Event listeners
 document
     .querySelectorAll('.cell')
     .forEach((cell) => cell.addEventListener('click', cellClick));
