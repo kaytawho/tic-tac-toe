@@ -74,9 +74,9 @@ function resultValidation() {
     if (roundWon) {
         gameStatus.innerHTML = winnerMessage();
         if (currentPlayer === 'X') {
-            xScore.innerHTML = playerXScore + 1;
+            xScore.innerHTML = ++playerXScore;
         } else {
-            oScore.innerHTML = playerOScore + 1;
+            oScore.innerHTML = ++playerOScore;
         }
         isGameActive = false;
         return;
