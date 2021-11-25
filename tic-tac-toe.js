@@ -110,8 +110,16 @@ function restartGame() {
     document.querySelectorAll('.cell').forEach((cell) => (cell.innerHTML = ''));
 }
 
+function resetScore() {
+    xScore.innerHTML = 0;
+    oScore.innerHTML = 0;
+    playerXScore = 0;
+    playerOScore = 0;
+}
+
 // Event listeners
 document
     .querySelectorAll('.cell')
     .forEach((cell) => cell.addEventListener('click', cellClick));
 document.querySelector('.restart').addEventListener('click', restartGame);
+document.querySelector('.resetscore').addEventListener('click', resetScore);
