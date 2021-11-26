@@ -1,5 +1,8 @@
 # tic-tac-toe
 
+## URL
+- See the live game [here](https://kaytawho.github.io/tic-tac-toe/)
+
 ## Tech Used
 
 -   HTML
