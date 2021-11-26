@@ -37,3 +37,8 @@
     - if a player has not won, wait for the next click to update grid and repeat
 
 -   game mockup: ![game mockup](tic-tac-toe-mockup.png)
+
+## Added Features
+
+- Scoreboard with score reset functionality
+- How to instructions for players
