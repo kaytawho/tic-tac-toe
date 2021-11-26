@@ -122,4 +122,6 @@ document
     .querySelectorAll('.cell')
     .forEach((cell) => cell.addEventListener('click', cellClick));
 document.querySelector('.restart').addEventListener('click', restartGame);
-document.querySelector('.resetscore').addEventListener('click', resetScore);
+document
+    .querySelector('.resetscorebutton')
+    .addEventListener('click', resetScore);
