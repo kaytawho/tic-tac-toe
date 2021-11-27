@@ -46,13 +46,13 @@
 
 
 ## Mockup
--   game mockup:
 ![game mockup](tic-tac-toe-mockup.png)
 
 ## Added Features
 
 - Scoreboard with score reset functionality
 - How to instructions for players
+- Mobile responsiveness
 
 ## Future Features
 - Player vs. Bot
