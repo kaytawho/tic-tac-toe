@@ -46,7 +46,8 @@
 
 
 ## Mockup
--   game mockup: ![game mockup](tic-tac-toe-mockup.png)
+-   game mockup:
+![game mockup](tic-tac-toe-mockup.png)
 
 ## Added Features
 
