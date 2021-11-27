@@ -12,13 +12,12 @@ A simple, two player tic tac toe (or naughts and crosses) game!
 -   CSS
 -   JavaScript
 
-## ✍🏾 Planning
+## ✍🏾 Approach
 - Researched tic tac toe games
 - Created pseudocode
 - Created mockup
 - Created basic JavaScript, HTML and CSS
 - Kept iterating
-
 
 ## 💡 Pseudocode
 
