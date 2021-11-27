@@ -19,7 +19,7 @@ section {
 }
 
 .wrapper {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 }
@@ -133,4 +133,11 @@ li {
     margin-bottom: 20px;
     grid-column-start: 1;
     grid-column-end: 3;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

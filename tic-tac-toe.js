@@ -110,6 +110,7 @@ function restartGame() {
     document.querySelectorAll('.cell').forEach((cell) => (cell.innerHTML = ''));
 }
 
+// Score reset
 function resetScore() {
     xScore.innerHTML = 0;
     oScore.innerHTML = 0;
