@@ -51,9 +51,10 @@ A simple, two player tic tac toe (or naughts and crosses) game!
 ![game mockup](tic-tac-toe-mockup.png)
 
 ## 🎮 Features
+- Reset game functionality
 - Scoreboard with score reset functionality
 - How to instructions for players
-- Mobile responsiveness
+- Basic mobile responsiveness
 
 ## 👾 Future Features
 - Player vs. Bot
