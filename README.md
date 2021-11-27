@@ -56,7 +56,12 @@ A simple, two player tic tac toe (or naughts and crosses) game!
 - How to instructions for players
 - Basic mobile responsiveness
 
+## 💭 Areas of Improvement
+- Mobile responsive elements - I'd like to tighten these up!
+- Scoreboard & Instruction CSS styling
+
 ## 👾 Future Features
 - Player vs. Bot
 - Sound effects
 - On-page transitions/animations
+
