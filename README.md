@@ -1,15 +1,15 @@
 # tic-tac-toe
 
-## Wanna play?
+## ▶️ Wanna play?
 - See the live game [here](https://kaytawho.github.io/tic-tac-toe/)
 
-## Tech Used
+## 👩🏾‍💻 Tech Used
 
 -   HTML
 -   CSS
 -   JavaScript
 
-## Planning
+## ✍🏾 Planning
 - Researched tic tac toe games
 - Created pseudocode
 - Created mockup
@@ -17,7 +17,7 @@
 - Kept iterating
 
 
-## Pseudocode
+## 💡 Pseudocode
 
 - **Rendering the game in the browser**
     - Display player 1 - X
@@ -45,16 +45,15 @@
     - if a player has not won, wait for the next click to update grid and repeat
 
 
-## Mockup
+## 🖥️ Mockup
 ![game mockup](tic-tac-toe-mockup.png)
 
-## Added Features
-
+## 🎮 Features
 - Scoreboard with score reset functionality
 - How to instructions for players
 - Mobile responsiveness
 
-## Future Features
+## 👾 Future Features
 - Player vs. Bot
 - Sound effects
 - On-page transitions/animations
