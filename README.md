@@ -4,7 +4,7 @@
 A simple, two player tic tac toe (or naughts and crosses) game!
 
 ## ▶️ Wanna play?
-- See the live game [here](https://kaytawho.github.io/tic-tac-toe/)
+See the live game [here](https://kaytawho.github.io/tic-tac-toe/)
 
 ## 👩🏾‍💻 Tech Used
 
