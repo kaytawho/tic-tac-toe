@@ -61,6 +61,7 @@ See the live game [here](https://kaytawho.github.io/tic-tac-toe/)
 - Scoreboard & Instruction CSS styling
 
 ## 👾 Future Features
+- Player selection
 - Player vs. Bot
 - Sound effects
 - On-page transitions/animations
