@@ -1,5 +1,8 @@
 # tic-tac-toe
 
+## Wanna play?
+- See the live game [here](https://kaytawho.github.io/tic-tac-toe/)
+
 ## Tech Used
 
 -   HTML
@@ -7,6 +10,14 @@
 -   JavaScript
 
 ## Planning
+- Researched tic tac toe games
+- Created pseudocode
+- Created mockup
+- Created basic JavaScript, HTML and CSS
+- Kept iterating
+
+
+## Pseudocode
 
 - **Rendering the game in the browser**
     - Display player 1 - X
@@ -33,4 +44,16 @@
     - if both players are a draw, display the draw message and end game
     - if a player has not won, wait for the next click to update grid and repeat
 
+
+## Mockup
 -   game mockup: ![game mockup](tic-tac-toe-mockup.png)
+
+## Added Features
+
+- Scoreboard with score reset functionality
+- How to instructions for players
+
+## Future Features
+- Player vs. Bot
+- Sound effects
+- On-page transitions/animations
