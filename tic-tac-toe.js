@@ -1,3 +1,12 @@
+// Event listeners
+document
+    .querySelectorAll('.cell')
+    .forEach((cell) => cell.addEventListener('click', cellClick));
+document.querySelector('.restart').addEventListener('click', restartGame);
+document
+    .querySelector('.resetscorebutton')
+    .addEventListener('click', resetScore);
+
 const gameStatus = document.querySelector('.status');
 const xScore = document.querySelector('.xscore');
 const oScore = document.querySelector('.oscore');
@@ -117,12 +126,3 @@ function resetScore() {
     playerXScore = 0;
     playerOScore = 0;
 }
-
-// Event listeners
-document
-    .querySelectorAll('.cell')
-    .forEach((cell) => cell.addEventListener('click', cellClick));
-document.querySelector('.restart').addEventListener('click', restartGame);
-document
-    .querySelector('.resetscorebutton')
-    .addEventListener('click', resetScore);
